@@ -15,9 +15,9 @@ jobs:
 
       - name: Build and Push Docker Image
         env:
-          DOCKER_USER: shansaifi
-          DOCKER_PASS: Shan2003+NR
+          DOCKER_USER: simon
+          DOCKER_PASS: Aprilapril23.
         run: |
           echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
-          docker build --no-cache -t shansaifi/image-microservice:latest .
-          docker push shansaifi/image-microservice:latest
+          docker build --no-cache -t simon/image-microservice:latest .
+          docker push simon/image-microservice:latest
